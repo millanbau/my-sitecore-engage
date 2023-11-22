@@ -115,8 +115,8 @@ async function startSetup(){
     
     
     // add Sleep timer to ensure that content items are installed after content types
-    console.log(color.INFO,'Wait 10 seconds so push of content types can be completed');
-    await cmd.sleep(10000);
+    console.log(color.INFO,'Wait 50 seconds so push of content types can be completed');
+    await cmd.sleep(50000);
     console.log(color.INFO,'Wait done');
     console.log(color.SUCCESS,'Completed - Push Content Types: ' + status);
     
