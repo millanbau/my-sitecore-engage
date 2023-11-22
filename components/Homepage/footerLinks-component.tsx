@@ -7,8 +7,8 @@ type Props = {
     menuResults: MenuResults;
 }
 
-const FooterLinksComponent = ({menuResults}: Props) => {
-    return(
+const FooterLinksComponent = ({ menuResults }: Props) => {
+    return (
         <div className={stylesHp.FooterLinks}>
             {menuResults.results.map((menu: Menu) => (
                 <Link key={menu.id} href={menu.link} className={stylesHp.FooterLinksItem}>
@@ -20,10 +20,8 @@ const FooterLinksComponent = ({menuResults}: Props) => {
                         className={stylesHp.Logo}
                     />
                 </Link>
-              
             ))}
         </div>
-        
     )
 }
 

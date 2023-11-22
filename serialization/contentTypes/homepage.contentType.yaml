@@ -18,23 +18,23 @@ fields:
   required: false
   helpText:
     en-US: ''
-- id: recipeTitle
+- id: mealTitle
   name:
-    en-US: Recipe Title
+    en-US: Meal Title
   type: ShortText
   required: false
   helpText:
     en-US: ''
-- id: recipeSectionText
+- id: mealSectionText
   name:
-    en-US: Recipe Section Text
+    en-US: Meal Section Text
   type: LongText
   required: false
   helpText:
     en-US: ''
-- id: recipes
+- id: meals
   name:
-    en-US: Recipes
+    en-US: Meals
   type: Reference
   required: false
   helpText:

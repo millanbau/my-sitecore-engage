@@ -1,5 +1,5 @@
 import { MediaResults } from "../Common/media-type"
-import { RecipeResults } from "../Recipe/recipe-type"
+import { MealResults } from "../Meal/meal-type"
 import { FooterResults } from "./footer-type"
 import { HeaderResults } from "./header-type"
 
@@ -9,9 +9,9 @@ type Homepage = {
     name: string
     header: HeaderResults
     heroBanner : MediaResults
-    recipeTitle: string
-    recipeSectionText: string
-    recipes: RecipeResults
+    mealTitle: string
+    mealSectionText: string
+    meals: MealResults
     footer: FooterResults
   }
 export default Homepage

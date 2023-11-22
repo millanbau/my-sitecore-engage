@@ -1,7 +1,7 @@
 ﻿id: 7DHrtexF3Eew9M5kow5h7A
 name: Caramel Cream Latte
 fields:
-  recipeTitle:
+  mealTitle:
     value: Caramel Cream Latte
     type: ShortText
   minutesToPrepare:

@@ -1,7 +1,7 @@
 ﻿id: -2OFtOw5zEekwWNhAocubQ
 name: Pizza
 fields:
-  recipeTitle:
+  mealTitle:
     value: Delicious Pizza
     type: ShortText
   minutesToPrepare:

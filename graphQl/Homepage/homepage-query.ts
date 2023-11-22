@@ -1,5 +1,5 @@
 import MEDIA_QUERY from "../Common/media-query";
-import { RECIPE_QUERY } from "../Recipe/recipe-query";
+import { MEAL_QUERY } from "../Meal/meal-query";
 import { FOOTER_QUERY } from "./footer-query";
 import MENU_QUERY from "./menu-query";
 
@@ -36,14 +36,14 @@ export const HOMEPAGE_QUERY = `
       }
     }
   }
-  recipeTitle
-  recipeSectionText
-  recipes {
+  mealTitle
+  mealSectionText
+  meals {
     total
     results {
       __typename
-      ... on Recipe {
-        ${RECIPE_QUERY}
+      ... on Meal {
+        ${MEAL_QUERY}
       }
     }
     

@@ -1,7 +1,7 @@
 ﻿id: W0XD7ovswU2ctmOx-Zw45Q
 name: Soft Ice
 fields:
-  recipeTitle:
+  mealTitle:
     value: Soft Ice Cream
     type: ShortText
   minutesToPrepare:

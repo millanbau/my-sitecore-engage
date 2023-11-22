@@ -1,7 +1,7 @@
 ﻿id: T1t4v4fg4EqBDv3dzol2wA
 name: Donuts
 fields:
-  recipeTitle:
+  mealTitle:
     value: Donuts
     type: ShortText
   minutesToPrepare:

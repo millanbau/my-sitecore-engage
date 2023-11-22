@@ -1,12 +1,12 @@
-﻿id: recipe
+﻿id: meal
 name:
-  en-US: Recipe
+  en-US: Meal
 description:
-  en-US: Simple Recipe for Cooking instructions
+  en-US: Simple Meal for Cooking instructions
 fields:
-- id: recipeTitle
+- id: mealTitle
   name:
-    en-US: Recipe Title
+    en-US: Meal Title
   type: ShortText
   required: true
   helpText:

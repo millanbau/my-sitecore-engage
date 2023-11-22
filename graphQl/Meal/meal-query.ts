@@ -1,8 +1,8 @@
 import MEDIA_QUERY from "../Common/media-query";
 
-export const RECIPE_QUERY = ` 
+export const MEAL_QUERY = ` 
   id
-  Title: recipeTitle
+  Title: mealTitle
   Name: name
   Ingredients: ingredients
   Duration: minutesToPrepare
@@ -16,17 +16,17 @@ export const RECIPE_QUERY = `
   }
 `;
 
-export const ALL_RECIPE_QUERY = `{ 
-    data: allRecipe
+export const ALL_MEAL_QUERY = `{ 
+    data: allMeal
     {
       __typename
       total
       results {
-        ${RECIPE_QUERY}
+        ${MEAL_QUERY}
       }
     }
   }
   `;
 
-export default ALL_RECIPE_QUERY
+export default ALL_MEAL_QUERY
 

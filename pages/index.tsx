@@ -4,7 +4,7 @@ import stylesHp from '../styles/Homepage/Homepage.module.css';
 import {getAllHomepage, getHomepageById} from "../lib/Homepage/homepage-lib";
 import Homepage from "../types/Homepage/homepage-type";
 import FooterComponent from '../components/Homepage/footer-component';
-import RecipeTeaserComponent from '../components/Recipe/recipeTeaser-component';
+import MealTeaserComponent from '../components/Meal/mealTeaser-component';
 import Image from 'next/image'
 import HeroBanner from '../components/Homepage/hero-banner';
 import { HOMEPAGE_ID } from '../lib/Common/constants';
@@ -50,12 +50,12 @@ const Homepage = ({allHomepage,homepage}: Props) => {
 
         <div className={stylesHp.boxedContainer}>
           <h1 className={stylesHp.title}>
-            {homepage.recipeTitle}
+            {homepage.mealTitle}
           </h1>
-          <p className={stylesHp.SectionDescription}>{homepage.recipeSectionText}</p>
+          <p className={stylesHp.SectionDescription}>{homepage.mealSectionText}</p>
         
-          <RecipeTeaserComponent
-            allRecipes={allHomepage[0].recipes}
+          <MealTeaserComponent
+            allMeals={allHomepage[0].meals}
           />
         </div>
 

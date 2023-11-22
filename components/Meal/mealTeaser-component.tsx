@@ -1,33 +1,33 @@
 import stylesHp from '../../styles/Homepage/Homepage.module.css'
-import {RecipeResults} from "../../types/Recipe/recipe-type";
+import {MealResults} from "../../types/Meal/meal-type";
 import Link from 'next/link'
 import Image from 'next/image'
 
 type Props = {
-    allRecipes: RecipeResults;
+    allMeals: MealResults;
 }
-const RecipeTeaserComponent = ({allRecipes}:Props) => {
-    const recipes = allRecipes.results;
+const MealTeaserComponent = ({allMeals}:Props) => {
+    const meals = allMeals.results;
     
     return(
         <div>
-            {recipes.map((recipe: any) => (
-                <div key={recipe.id} className={stylesHp.boxOuter}>
+            {meals.map((meal: any) => (
+                <div key={meal.id} className={stylesHp.boxOuter}>
                     <div className={stylesHp.box}>
                         <Image 
                             alt=''
-                            src={recipe.ImageList.results[0].fileUrl}
+                            src={meal.ImageList.results[0].fileUrl}
                             width='500'
                             height= '500'
                             className={stylesHp.boxImage}
                         />
-                        <h2>{recipe.Title}</h2>
+                        <h2>{meal.Title}</h2>
                         <p className={stylesHp.boxText}>
-                            {recipe.Description}
+                            {meal.Description}
                         </p>
                         <p>
                             <button className={stylesHp.button}>
-                            <Link href={`/recipes/${encodeURIComponent(recipe.id)}`}>Read more</Link>
+                            <Link href={`/meals/${encodeURIComponent(meal.id)}`}>Read more</Link>
                             </button>
                         </p>
                     </div>
@@ -37,4 +37,4 @@ const RecipeTeaserComponent = ({allRecipes}:Props) => {
     )
 }
 
-export default RecipeTeaserComponent
+export default MealTeaserComponent
